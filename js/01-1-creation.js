@@ -36,12 +36,12 @@
  * - Отсутствующие свойства
  */
 
-const playlist = {
-  name: 'Мой супер плейлист',
-  rating: 5,
-  tracks: ['трек-1', 'трек-2', 'трек-3'],
-  trackCount: 3,
-};
+// const playlist = {
+//   name: 'Мой супер плейлист',
+//   rating: 5,
+//   tracks: ['трек-1', 'трек-2', 'трек-3'],
+//   trackCount: 3,
+// };
 
 // playlist.qwe = 5;
 
@@ -54,7 +54,7 @@ const playlist = {
 // console.log(playlist.name);
 // console.log(playlist.trackCount);
 
-const propertyName = 'tracks';
+// const propertyName = 'tracks';
 
 // console.log(playlist.rating);
 // console.log(playlist['rating']);
@@ -65,13 +65,13 @@ const propertyName = 'tracks';
 /*
  * Короткая запись свойств
  */
-const username = 'Mango';
-const email = 'mango@mail.com';
+// const username = 'Mango';
+// const email = 'mango@mail.com';
 
-const signupData = {
-  username,
-  email,
-};
+// const signupData = {
+//   username,
+//   email,
+// };
 
 // console.log(signupData);
 
@@ -81,12 +81,12 @@ const signupData = {
 
 //  <input name="color" value="tomato" >
 
-const inputName = 'color';
-const inputValue = 'tomato';
+// const inputName = 'color';
+// const inputValue = 'tomato';
 
-const colorPickerData = {
-  [inputName]: inputValue,
-};
+// const colorPickerData = {
+//   [inputName]: inputValue,
+// };
 
 // console.log(colorPickerData);
 
@@ -125,3 +125,17 @@ const colorPickerData = {
 // fn.hello = ';)';
 
 // console.dir(fn.hello);
+
+
+const myCrazyObject = {
+  name: 'A ridiculous object',
+ 'some array': [7, 9, { purpuse: 'confusion', number: 123 }, 3.3],
+ 'random animal': 'Banana Shark',
+}; 
+
+console.log(myCrazyObject['some array'][2].number);
+
+let {
+  ['some array']: [, , { number }],
+} = myCrazyObject;
+console.log(number); 
