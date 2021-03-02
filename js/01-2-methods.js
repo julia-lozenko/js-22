@@ -173,3 +173,80 @@ const atTheOldToad = {
   },
   // Пиши код выше этой строки
 };
+
+
+
+// СЕРЕЖА 
+
+const atTheOldToad = {
+  potions: [
+    { name: 'Зелье скорости', price: 460 },
+    { name: 'Дыхание дракона', price: 780 },
+    { name: 'Каменная кожа', price: 520 },
+  ],
+  getPotions() {
+    return this.potions;
+  },
+  addPotion(potionName) {
+    this.potions.push(potionName);
+  },
+  removePotion(potionName) {
+    let potions = this.potions;
+    for (let i = 0; i < potions.length; i += 1) {
+      if (potions[i].name === potionName) {
+        potions.splice(i, 1);
+        break;
+      }
+    }
+  },
+  updatePotionName(oldName, newName) {
+    for (const potion of this.potions) {
+      if (potion.name === oldName) {
+        potion.name = newName;
+        break;
+      }
+    }
+  },
+};
+
+
+
+// АЛИНА
+
+const atTheOldToad = {
+  potions: [
+    { name: 'Зелье скорости', price: 460 },
+    { name: 'Дыхание дракона', price: 780 },
+    { name: 'Каменная кожа', price: 520 },
+  ],
+  // Пиши код ниже этой строки
+  getPotions() {
+    return this.potions;
+  },
+  addPotion(newPosion) {
+    for (const potion of this.potions)
+      if (Object.keys(potion).includes(newPosion.name)) {
+        return `Зелье ${newPosion.name} уже есть в инвентаре!`;
+      }
+    this.potions.push(newPosion);
+  },
+  removePotion(potionName) {
+    for (const potion of this.potions) {
+      if (potion.name === potionName) {
+        this.potions.splice(this.potions.indexOf(potion), 1);
+        return;
+      }
+    }
+    return `Зелья ${potionName} нет в инвентаре!`;
+  },
+  updatePotionName(oldName, newName) {
+    for (const potion of this.potions) {
+      if (potion.name === oldName) {
+        potion.name = newName;
+        return;
+      }
+    }
+    return `Зелья ${oldName} нет в инвентаре!`;
+  },
+  // Пиши код выше этой строки
+};
