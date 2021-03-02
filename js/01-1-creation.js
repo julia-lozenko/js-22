@@ -127,15 +127,15 @@
 // console.dir(fn.hello);
 
 
-const myCrazyObject = {
-  name: 'A ridiculous object',
- 'some array': [7, 9, { purpuse: 'confusion', number: 123 }, 3.3],
- 'random animal': 'Banana Shark',
-}; 
+// const myCrazyObject = {
+//   name: 'A ridiculous object',
+//  'some array': [7, 9, { purpuse: 'confusion', number: 123 }, 3.3],
+//  'random animal': 'Banana Shark',
+// }; 
 
-console.log(myCrazyObject['some array'][2].number);
+// console.log(myCrazyObject['some array'][2].number);
 
-let {
-  ['some array']: [, , { number }],
-} = myCrazyObject;
-console.log(number); 
+// let {
+//   ['some array']: [, , { number }],
+// } = myCrazyObject;
+// console.log(number); 
