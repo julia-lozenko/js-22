@@ -131,11 +131,48 @@
 //   name: 'A ridiculous object',
 //  'some array': [7, 9, { purpuse: 'confusion', number: 123 }, 3.3],
 //  'random animal': 'Banana Shark',
-// }; 
+// };
 
 // console.log(myCrazyObject['some array'][2].number);
 
 // let {
 //   ['some array']: [, , { number }],
 // } = myCrazyObject;
-// console.log(number); 
+// console.log(number);
+
+// const petya = {
+//   name: 'Petya',
+//   showName() {
+//     console.log(this.name);
+//   },
+// };
+
+// petya.showName();
+
+// const arr = [1, [1, 2, [3, 4]], [2, 4]];
+
+// console.log(arr.join(',').split(','));
+
+const orders = [
+  { email: 'solomon@topmail.ua', dish: 'Burger' },
+  { email: 'artemis@coldmail.net', dish: 'Pizza' },
+  { email: 'jacob@mail.com', dish: 'Taco' },
+];
+
+// Пиши код ниже этой строки
+
+for (let i = 0; i < orders.length; i+=1) { 
+  const order = i + 1;
+ 
+  console.log(order);
+
+}
+
+
+
+//   return messages.push(
+//     `Готовим ${this.dish} для ${this.email}. Ваш заказ ${this.order}й в очереди.`,
+//   );
+// }
+
+// const messages = [];
